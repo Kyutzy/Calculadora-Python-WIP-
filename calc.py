@@ -18,10 +18,10 @@ def update(): #essa função atualiza o "display da calculadora"
     label = Label(root, text=a_int, font=("ubuntu", 30)) #esse é o display da calculadora em si, ele pega o número processado e escreve na tela
     labels.append(label) #coloca o número que foi acrescentado na lista de números
     label.place(x=220, y=30) #coloca o display no lugar
-    cebola() #chama a função de conversão para algo que eu possa usar
+    conversor() #chama a função de conversão para algo que eu possa usar
 
 
-def cebola(): #essa função converte a lista numero em um número que eu possa usar
+def conversor(): #essa função converte a lista numero em um número que eu possa usar
     global a_int #modifico o a_int global
     a = [str(integer) for integer in numero] #transformo cada inteiro da lista numero em uma string ex: [1,2,3] vira ["1", "2", "3"]
     a_string = "".join(a) #pego todas as strings da lista, junto elas em uma frase e transformo a lista em string ex: ["1", "2", "3"] vira "123"
